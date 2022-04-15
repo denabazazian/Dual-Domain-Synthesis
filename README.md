@@ -6,7 +6,7 @@ Pytorch implementation of a segmentation-guided approach to synthesise images th
 [[paper]](https://arxiv.org/pdf)
 
 
-<img src="images/main_img.png" width="400">
+<img src="images/main_img.png" width="500">
  
  
 
