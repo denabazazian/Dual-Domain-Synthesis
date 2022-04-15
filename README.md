@@ -42,14 +42,14 @@ conda activate DDS
 
 - Run the DDS code:  
 First code is to run on a random sample_z, second code is for reproducing the results of Figure 5 in the paper by loading their sample_z, third code can be use on a random sample_z or loading a sample_z for saving the iterations of latent optimiser and making a gif of the iterations to see the process.  
-(each one of these following three codes requires around 5GB of GPU memory and 5 minutes for running.)
+(Each one of these following three codes requires around 5GB of GPU memory and 5 minutes for running.)
 
   - run a random sample_z:
    ```bash
   python DDS_main.py --generator_domain1_dir path/to/generator1 --generator_domain2_dir path/to/generator2 --segmentation_dir path/to/segmentation_root --part_key eyes_nose_mouth --save_path_root path/to/save_root
   ```
   - load a sample_z:  
-  (The latent code (sample_z) of the examples in Figure 5 of the paper to reproduce the results.)
+  (The latent code [sample_z] of the examples in Figure 5 of the paper to reproduce the results.)
   ```bash
   python DDS_main.py --generator_domain1_dir path/to/generator1 --generator_domain2_dir path/to/generator2 --segmentation_dir path/to/segmentation_root --part_key eyes_nose_mouth --save_path_root path/to/save_root --sample_z_path path/to/sampleZ
   ```
