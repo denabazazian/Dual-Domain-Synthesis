@@ -52,9 +52,17 @@ First code is to run on a random sample_z, second code is for reproducing the re
       - domain1: ```convert -delay 20 -loop 0 *_D1.png DDS_D1.gif```
       - domain2: ```convert -delay 20 -loop 0 *_D2.png DDS_D2.gif```  
    
-# Citation
+### Bibtex
 If you find our code useful, please cite our paper:
 
+```
+@inproceedings{bazazian2022DualDomain,
+  title={Dual-Domain Image Synthesis Using Segmentation-Guided GAN},
+  author={Bazazian, Dena and Calway, Andrew amd Damen, Dima},
+  booktitle={CVPR workshops},
+  year={2022}
+}
+```
 
-#  Acknowledgement  
+###  Acknowledgement  
 As mentioned before, the StyleGAN2 model is borrowed from [stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch), [few-shot-gan-adaptation](https://github.com/utkarshojha/few-shot-gan-adaptation) and segmentation masks from [repurpose-gan](https://github.com/bryandlee/repurpose-gan).
