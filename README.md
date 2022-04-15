@@ -1,11 +1,7 @@
 ## Dual-Domain Image Synthesis Using Segmentation-Guided GAN 
 [[paper]](https://arxiv.org/pdf)
 
-|Source| Target | Dual-Domain | Latent optimisation |
-| -- |  -- | -- | -- |
-|<img src="images/27_org_target.png" width="250" hspace="3"> | <img src="images/27_org_source.png" width="250" hspace="3">| <img src="images/27_DDS.png" width="250" hspace="3">| <img src="images/gif_27_iter.gif" width="250" hspace="3">|
-|<img src="images/34_org_target.png" width="250" hspace="3"> | <img src="images/34_org_source.png" width="250" hspace="3">| <img src="images/34_DDS.png" width="250" hspace="3">| <img src="images/gif_34_iter.gif" width="250" hspace="3">|
-
+<img src="images/main_img.png">
  
  
 
@@ -57,7 +53,15 @@ First code is to run on a random sample_z, second code is for reproducing the re
     - make a gif of the iterations: ```cd path/to/iterations```
       - domain1: ```convert -delay 20 -loop 0 *_D1.png DDS_D1.gif```
       - domain2: ```convert -delay 20 -loop 0 *_D2.png DDS_D2.gif```  
-   
+
+
+
+|Source| Target | Dual-Domain | Latent optimisation |
+| -- |  -- | -- | -- |
+|<img src="images/27_org_target.png" width="250" hspace="3"> | <img src="images/27_org_source.png" width="250" hspace="3">| <img src="images/27_DDS.png" width="250" hspace="3">| <img src="images/gif_27_iter.gif" width="250" hspace="3">|
+|<img src="images/34_org_target.png" width="250" hspace="3"> | <img src="images/34_org_source.png" width="250" hspace="3">| <img src="images/34_DDS.png" width="250" hspace="3">| <img src="images/gif_34_iter.gif" width="250" hspace="3">|
+
+
 ### Bibtex
 If you find our code useful, please cite our paper:
 
