@@ -1,5 +1,6 @@
-# modified from : https://github.com/bryandlee/repurpose-gan
-#----------------------------------------------------------------------------
+'''
+modified from : https://github.com/bryandlee/repurpose-gan
+'''
 
 
 from torch import nn
