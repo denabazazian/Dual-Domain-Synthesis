@@ -1,7 +1,11 @@
 ## Dual-Domain Image Synthesis Using Segmentation-Guided GAN 
-[[paper]](https://arxiv.org/pdf)
+
 
 Pytorch implementation of a segmentation-guided approach to synthesise images that integrate features from two distinct domains. 
+
+[[paper]](https://arxiv.org/pdf)
+
+
 <img src="images/main_img.png" width="400">
  
  
