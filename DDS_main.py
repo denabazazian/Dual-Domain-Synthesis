@@ -163,7 +163,8 @@ with torch.no_grad():
     targ_generator.eval().to(device)
     print(f'[StyleGAN2 generator for target style loaded] {target_model_path}\n')
 
-    ########## target generator setup
+    ########################################################
+    
     targ_truncation =  float(1)
     targ_mean_latent = None
 
