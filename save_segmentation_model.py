@@ -1,10 +1,6 @@
-################################################################################
-# bash comment:
-# python save_segmentation_model.py --generator_dir path/to/generator  --segmentation_dir path/to/segmentation --part_key eyes
-
-################################################################################
-# modified from : https://github.com/bryandlee/repurpose-gan
-#----------------------------------------------------------
+'''
+modified from : https://github.com/bryandlee/repurpose-gan
+'''
 
 import torch
 import torch.nn.functional as F
@@ -31,7 +27,7 @@ from utils_repurpose import tensor2image, imshow, horizontal_concat, imsave
 from stylegan2  import Generator
 
 ################################################################################
-######################### parser ############################
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--generator_dir", type=str, help='path to the generator model')
 parser.add_argument("--segmentation_dir", type=str, help='path to the save the segmentation model')
