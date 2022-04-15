@@ -71,4 +71,4 @@ If you find our code useful, please cite our paper:
 ```
 
 ###  Acknowledgement  
-As mentioned before, the StyleGAN2 model is borrowed from [stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch), domain adaptation models borrowed from [few-shot-gan-adaptation](https://github.com/utkarshojha/few-shot-gan-adaptation), perceptual model from [StyleGAN_LatentEditor](https://github.com/pacifinapacific/StyleGAN_LatentEditor) and segmentation masks from [repurpose-gan](https://github.com/bryandlee/repurpose-gan).
+As mentioned before, the StyleGAN2 model is borrowed from [stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch), domain adaptation models are borrowed from [few-shot-gan-adaptation](https://github.com/utkarshojha/few-shot-gan-adaptation), code for the perceptual model is borrowed from [StyleGAN_LatentEditor](https://github.com/pacifinapacific/StyleGAN_LatentEditor) and source code for training the segmentation models is borrowed from [repurpose-gan](https://github.com/bryandlee/repurpose-gan).
