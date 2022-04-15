@@ -1,5 +1,6 @@
-#modified from: https://github.com/pacifinapacific/StyleGAN_LatentEditor/blob/master/perceptual_model.py
-#-------------------------------------------------------------------------------------------------------------
+'''
+modified from: https://github.com/pacifinapacific/StyleGAN_LatentEditor/blob/master/perceptual_model.py
+'''
 
 
 import torch 
