@@ -1,5 +1,6 @@
-# modified from:  https://github.com/rosinality/stylegan2-pytorch
-#--------------------------------------------------------------------------------------------
+'''
+modified from:  https://github.com/rosinality/stylegan2-pytorch
+'''
 
 
 import math
