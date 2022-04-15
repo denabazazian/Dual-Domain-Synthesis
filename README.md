@@ -1,6 +1,10 @@
 # Dual-Domain-Synthesis
 Source Code for Dual-Domain Image Synthesis Using Segmentation-Guided GAN
-#### Dual-Domain Image Synthesis Using Segmentation-Guided GAN
+
+
+
+
+#### Dual-Domain Image Synthesis Using Segmentation-Guided GAN [[paper]](https://arxiv.org/pdf)
  
 
 ## Installation
