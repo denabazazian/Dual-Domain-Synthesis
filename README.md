@@ -1,10 +1,12 @@
-# Dual-Domain-Synthesis
-Source Code for Dual-Domain Image Synthesis Using Segmentation-Guided GAN
+## Dual-Domain Image Synthesis Using Segmentation-Guided GAN 
+[[paper]](https://arxiv.org/pdf)
 
+|Source| Target | Dual-Domain | Latent optimisation |
+| -- |  -- | -- | -- |
+|<img src="images/27_org_target.png" width="250" hspace="3"> | <img src="images/27_org_source.png" width="250" hspace="3">| <img src="images/27_DDS.png" width="250" hspace="3">| <img src="images/gif_27_iter.gif" width="250" hspace="3">|
+|<img src="images/34_org_target.png" width="250" hspace="3"> | <img src="images/34_org_source.png" width="250" hspace="3">| <img src="images/34_DDS.png" width="250" hspace="3">| <img src="images/gif_34_iter.gif" width="250" hspace="3">|
 
-
-
-#### Dual-Domain Image Synthesis Using Segmentation-Guided GAN [[paper]](https://arxiv.org/pdf)
+ 
  
 
 ## Installation
