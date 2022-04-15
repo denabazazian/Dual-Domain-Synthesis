@@ -1,16 +1,3 @@
-#--------------------------------------------------------------------------------------------------#
-#    "Dual-Domain Image Synthesis Using Segmentation-Guided GAN" --CVPR 2022 Submission            #
-#--------------------------------------------------------------------------------------------------#
-
-
-################################################################################
-### random sample_z:
-# python DDS_main.py --generator_domain1_dir path/to/generator1 --generator_domain2_dir path/to/generator2 --segmentation_dir path/to/segmentation_root --part_key eyes_nose_mouth --save_path_root path/to/save_root
-#---------------------------------------------------------------------------------
-### load sample_z:
-# python DDS_main.py --generator_domain1_dir path/to/generator1 --generator_domain2_dir path/to/generator2 --segmentation_dir path/to/segmentation_root --part_key eyes_nose_mouth --save_path_root path/to/save_root --sample_z_path path/to/sampleZ
-################################################################################
-
 import argparse
 
 import torch
@@ -41,7 +28,7 @@ from stylegan2 import Generator
 
 
 ################################################################################
-######################### parser ############################
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--generator_domain1_dir", type=str, help='path to the domain1 generator model')
 parser.add_argument("--generator_domain2_dir", type=str, help='path to the domain2 generator model')
@@ -83,7 +70,7 @@ mask_guided_iterations = args.mask_guided_iterations
 lr = args.lr
 n_mean_latent = args.n_mean_latent
 
-########################
+###############################################
 save_path = save_path_root+str(id_dir)+"/"
 
 if sample_z_path:
@@ -199,7 +186,7 @@ with torch.no_grad():
             targ_masks[i,:,:,c] = (targ_predictions[i,:,:]==c)
 
 
-    ###################### save source , target  ###############################
+    #####################################################
 
     img_name = save_path+"org_source.png"
     img_tens = (imgs_gen.clamp_(-1., 1.).detach().squeeze().permute(1,2,0).cpu().numpy())*0.5 + 0.5
@@ -211,9 +198,6 @@ with torch.no_grad():
     pil_img = Image.fromarray((img_tens*255).astype(np.uint8))
     pil_img.save(img_name)
 
-#################################################################################################
-############################# Calculate Perceptual Loss #########################################
-#################################################################################################
 #################################################################################################
 
 def caluclate_loss(synth_img,img,perceptual_net,mask,MSE_Loss,image_resolution): 
@@ -247,9 +231,8 @@ torch.cuda.empty_cache()
 image_resolution = image_size 
 device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
-###############################################################################
-################# models source and target image and masks ##################
-###############################################################################
+#################################################################################################
+
 transform = transforms.Compose([transforms.ToTensor()])
 img_source = imgs_gen[0,:,:,:].unsqueeze(0).to(device)    #(1,3,image_size,image_size) (1,3,256,256)
 img_target = targ_imgs_gen[0,:,:,:].unsqueeze(0).to(device)   #(1,3,image_size,image_size) (1,3,256,256)
@@ -263,8 +246,9 @@ mask_1 = 1-(mask_1)  #(1,1,image_resolution,image_resolution)
 targ_mask_0 = targ_mask[:,0,:,:].unsqueeze(0) #(1,1,image_resolution,image_resolution)
 targ_mask_1 = targ_mask_0.clone()
 targ_mask_1 = 1-(targ_mask_1) #(1,1,image_resolution,image_resolution)
-###############################################################################
-##NaiveCorssove
+
+#################################################################################################
+
 cross_over_source = (img_source*mask_1)+(img_target*targ_mask_0)
 cross_over_source_image = tensor2image(cross_over_source.squeeze(0).to('cpu'))
 
@@ -304,8 +288,7 @@ pil_img.save(img_name)
 print("naive_crossover_source_target images are saved")
 
 ###############################################################################
-###############################################################################
-########## setup generator ########## 
+
 g_ema = generator
 with torch.no_grad():
         noise_sample = torch.randn(n_mean_latent, 512, device=device)
@@ -401,10 +384,9 @@ for i in range(mask_guided_iterations):
         pil_img.save(img_name)
 
 ##########################################################################################################################
-############## The other way  ############################################################################################
 ##########################################################################################################################
 ##########################################################################################################################
-########## setup generator ########## 
+
 g_ema = generator
 with torch.no_grad():
         noise_sample = torch.randn(n_mean_latent, 512, device=device)
