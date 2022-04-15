@@ -58,11 +58,11 @@ If you find our code useful, please cite our paper:
 ```
 @inproceedings{bazazian2022DualDomain,
   title={Dual-Domain Image Synthesis Using Segmentation-Guided GAN},
-  author={Bazazian, Dena and Calway, Andrew amd Damen, Dima},
+  author={Bazazian, Dena and Calway, Andrew and Damen, Dima},
   booktitle={CVPR workshops},
   year={2022}
 }
 ```
 
 ###  Acknowledgement  
-As mentioned before, the StyleGAN2 model is borrowed from [stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch), [few-shot-gan-adaptation](https://github.com/utkarshojha/few-shot-gan-adaptation) and segmentation masks from [repurpose-gan](https://github.com/bryandlee/repurpose-gan).
+As mentioned before, the StyleGAN2 model is borrowed from [stylegan2-pytorch](https://github.com/rosinality/stylegan2-pytorch), domain adaptation models borrowed from [few-shot-gan-adaptation](https://github.com/utkarshojha/few-shot-gan-adaptation) and segmentation masks from [repurpose-gan](https://github.com/bryandlee/repurpose-gan).
