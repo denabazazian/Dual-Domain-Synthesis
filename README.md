@@ -3,10 +3,9 @@
 
 Pytorch implementation of a segmentation-guided approach to synthesise images that integrate features from two distinct domains. 
 
-
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" height=22.5></a> 
 <a href="https://arxiv.org/abs/22"><img src="https://img.shields.io/badge/arXiv-22-b31b1b.svg" height=22.5></a>
 <a href="https://openaccess.thecvf.com/content/"><img src="https://img.shields.io/static/v1?label=Paper&message=CVPR2022w&color=blue" height=22.5></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" height=22.5></a> 
 
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg?style=plastic)
 ![pytorch 1.7.0](https://img.shields.io/badge/pytorch-1.7.1-green.svg?style=plastic)
@@ -89,7 +88,7 @@ First code is to run on a random sample_z, second code is for reproducing the re
 |<img src="images/34_org_target.png" width="250" hspace="3"> | <img src="images/34_org_source.png" width="250" hspace="3">| <img src="images/34_DDS.png" width="250" hspace="3">| <img src="images/gif_34_iter.gif" width="250" hspace="3">|
 
 
-### Bibtex
+### BibTeX
 If you find our code useful, please cite our paper:
 
 ```
