@@ -12,13 +12,25 @@ Pytorch implementation of a segmentation-guided approach to synthesise images th
 
 ## Installation
 
-- Install the required conda environment:
+- Clone Dual-Domain-Synthesis repository: 
+
+```
+git clone git@github.com:denabazazian/Dual-Domain-Synthesis.git
+```
+
+```
+cd Dual-Domain-Synthesis
+```
+
+#### Environment
+
+- Create the conda environment:
 
 ```bash
 conda env create -f DDS.yml
 ```
 
-- After installing the environment: 
+- After installing the required environment: 
 
 ```bash
 conda activate DDS
