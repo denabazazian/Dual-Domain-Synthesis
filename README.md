@@ -40,7 +40,7 @@ cd Dual-Domain-Synthesis
 conda env create -f DDS.yml
 ```
 
-- After installing the required environment: 
+- After installing the required environment dependencies: 
 
 ```bash
 conda activate DDS
