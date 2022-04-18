@@ -2,6 +2,11 @@
 
 
 Pytorch implementation of a segmentation-guided approach to synthesise images that integrate features from two distinct domains. 
+flow)
+
+![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg?style=plastic)
+![pytorch 1.7.0](https://img.shields.io/badge/pytorch-1.7.1-green.svg?style=plastic)
+![torchvision 0.8.2](https://img.shields.io/badge/torchvision-0.8.2-green.svg?style=plastic)
 
 [[paper]](https://arxiv.org/pdf)
 
