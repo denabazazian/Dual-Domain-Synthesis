@@ -3,7 +3,7 @@
 
 Pytorch implementation of a segmentation-guided approach to synthesise images that integrate features from two distinct domains. 
 
-<a href="https://arxiv.org/abs/22"><img src="https://img.shields.io/badge/arXiv-22-b31b1b.svg" height=22.5></a>
+<a href="https://arxiv.org/pdf/2204.09015.pdf"><img src="https://img.shields.io/badge/arXiv-2204.09015-b31b1b.svg" height=22.5></a>
 <a href="https://github.com/denabazazian/Dual-Domain-Synthesis/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" height=22.5></a> 
 <!-- 
 <a href="https://openaccess.thecvf.com/content/"><img src="https://img.shields.io/static/v1?label=Paper&message=CVPR2022w&color=blue" height=22.5></a>
