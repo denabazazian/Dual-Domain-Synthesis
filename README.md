@@ -4,15 +4,21 @@
 Pytorch implementation of a segmentation-guided approach to synthesise images that integrate features from two distinct domains. 
 
 <a href="https://arxiv.org/pdf/2204.09015.pdf"><img src="https://img.shields.io/badge/arXiv-2204.09015-b31b1b.svg" height=22.5></a>
+<a href="https://github.com/denabazazian/Dual-Domain-Synthesis/blob/main/images/poster.pdf"><img src="https://img.shields.io/static/v1?label=Paper&message=Poster&color=blueviolet" height=22.5></a>
 <a href="https://github.com/denabazazian/Dual-Domain-Synthesis/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" height=22.5></a> 
 <!-- 
 <a href="https://openaccess.thecvf.com/content/"><img src="https://img.shields.io/static/v1?label=Paper&message=CVPR2022w&color=blue" height=22.5></a>
 -->
 
+
+
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg?style=plastic)
 ![pytorch 1.7.0](https://img.shields.io/badge/pytorch-1.7.1-green.svg?style=plastic)
 ![torchvision 0.8.2](https://img.shields.io/badge/torchvision-0.8.2-green.svg?style=plastic)
 
+<!--
+ [![Poster](https://img.shields.io/badge/Poster-blueviolet)](https://github.com/denabazazian/Dual-Domain-Synthesis/blob/main/images/poster.pdf)
+ --> 
 <!-- 
 [[paper]](https://arxiv.org/pdf)
 --> 
