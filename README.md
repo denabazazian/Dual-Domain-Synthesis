@@ -100,11 +100,13 @@ First code is to run on a random sample_z, second code is for reproducing the re
 If you find our code useful, please cite our paper:
 
 ```
-@inproceedings{bazazian2022DualDomain,
-  title={Dual-Domain Image Synthesis Using Segmentation-Guided GAN},
-  author={Bazazian, Dena and Calway, Andrew and Damen, Dima},
-  booktitle={CVPR workshops},
-  year={2022}
+@InProceedings{Bazazian_2022_CVPR,
+    author    = {Bazazian, Dena and Calway, Andrew and Damen, Dima},
+    title     = {Dual-Domain Image Synthesis Using Segmentation-Guided GAN},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2022},
+    pages     = {507-516}
 }
 ```
 
